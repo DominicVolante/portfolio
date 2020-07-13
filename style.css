@@ -11,8 +11,7 @@ hr {
 	margin: 60px 0 100px 0;
   width:800px
 }
-/* ----- classes ----- */
-
+/* ----- Image classes to shrink and center ----- */
 .resize {
     width:500px;
     height: auto;
@@ -22,10 +21,13 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
+/* ----- wrapper class to center information ----- */
 .wrapper{
   max-width:600px;
   margin:auto;
 }
+
+  /* ----- Styled button classes ----- */
 .button {
 	color: #e0e1dd;
 	border: 1px black solid;
@@ -38,9 +40,8 @@ hr {
 	background-color: #8b959f;
 	padding: 5px 10px;
 }
+
 /* ----- header format ----- */
-
-
 header{
   color:#e0e1dd;
   text-align:center;
@@ -52,20 +53,20 @@ header{
 h1{
   font-size:50px;
 }
-/* ----- about me format ----- */
 
+/* ----- about me format ----- */
 h2{
   text-align:center;
 }
-/* ----- footer format ----- */
 
+/* ----- footer format ----- */
 footer{
   text-align:center;
   background-color:#e0e1dd;
   margin:10px;
 }
-/* ----- links ----- */
 
+/* ----- links ----- */
 a:link{
   color:#e0e1dd;
   text-decoration:none;
@@ -73,8 +74,8 @@ a:link{
 a:visited{
   color:#e0e1dd;
 }
-/* ----- Text ----- */
 
+/* ----- Text format ----- */
 p{
   font-size:16pt;
   line-height:25px;
@@ -87,4 +88,5 @@ h3{
 }
 li{
   font-size:16pt;
+  margin:15px;
 }
