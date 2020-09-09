@@ -1,67 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Dominic Volante</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-<!-- Header (name + title) -->
+</head>
+
+<body>
+    <!--- Header (name + title) --->
 
     <header>
-      <h1>Dominic Volante</h1>
-      <p>Software Engineer</p>
+        <h1>Dominic Volante</h1>
+        <p>Software Engineer</p>
+<!-- nav -->
+        <nav>
+            <ul>
+                <li><a href="#about" class="button">About</a></li>
+                <li><a href="#projects" class="button">Projects</a></li>
+                <li><a href="#contact" class="button">Contact</a></li>
+            </ul>
+        </nav>
+<!-- end nav -->
     </header>
-<!-- Image and Welcome Message --> 
+    <!--- Image and Welcome Message --->
 
     <main class="wrapper">
-      <div class="">
-        <br>
-        <img class="resize center" src="profile-photo.jpg" alt="Dominic Volante">
-      </div>
-      <h2>Welcome!</h2>
-      <p>I'm a Software Engineer living in New Paltz, NY</p>
-<!-- Ordered List of code languages --> 
+        <div class="imageWrapper">
+            <img class="imgClass" src="profile-photo.jpg" alt="Dominic Volante">
+        </div>
+        <div class="group">
+            <h2>Welcome!</h2>
+            <p>I'm a Software Engineer living in Cambridge, MA.</p>
+        </div>
+        <!--- Ordered List of code languages --->
+        <article>
+            <div class="group">
+                <p>My main languages are:</p>
+                <ol>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ol>
+            </div>
+        </article>
+        <p>Explore my website and <a href="#contact">contact me</a> with any questions!</p>
 
-      <p>My main languages are:</p>
-        <ol>
-          <li>JavaScript</li>
-          <li>HTML/CSS</li>
-          <li>Java</li>
-          <li>C#</li>
-          <li>Python</li>
-        </ol>
-      <p>Explore my website and <a href="#contact">contact me</a> with any questions!</p>
+
+
+
+
+
+        <hr class="wrapper">
+
+        <!--- About Me Section --->
+        <article id="about" class="wrapper">
+
+
+            <h3>About Dominic</h3>
+            <p>I've always had a passion for people, and helping those in need. I've spent the past seven years working
+                as a Police Officer in upstate New York, and during that time I worked hard to affect change in my
+                community and learned a ton of useful skills. While I was able to help many people and enjoyed community
+                policing, I wasn’t able to incite as much change as I wanted to.</p>
+            <p>After being inspired by amazing engineers such as Iddris Sandu, I realized a potential to reach further
+                by learning software engineering. I developed an interest in coding at the age of 13 after I built my
+                first computer and programmed a few HTML-based games. I've always maintained a strong interest in
+                science and technology. My main interests are in general AI, robotics software, and space studies, and I
+                regularly scan articles to keep up with the ever advancing tech world.</p>
+            <p> I am now a student at <a href="https://www.thinkful.com/" target="_blank">Thinkful</a> and I plan to
+                implement the skills I've learned as a Police Officer into the tech world. I have a passion for helping
+                people in any way that I can, and I hope to be able create software that can do just that.</p>
+            <p>If you're looking for a software engineer who is excited   to take on a challenge, please feel free to
+                reach out. I’m actively looking for new opportunities and I look forward to working with experienced
+                engineers.</p>
+        </article>
+        <hr class="wrapper">
+
+        <!---  Projects Section --->
+        <article id="projects">
+          <h3>Projects</h3>
+          <h4>Personality Quiz</h4>
+          <p>Here's a quiz I'm building using JavaScript, HTML, and CSS. This quiz will be built during my time at Thinkful as an assignment.</p>
+        </article>
+
+        <hr class="wrapper">
+        <!--- Contact Information --->
+
+        <div id="contact" class="wrapper">
+            <h3>Contact Me</h3>
+
+            <!--- list of contact methods --->
+
+            <ul>
+                <li><a href="https://github.com/DominicVolante" class="button" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/dominic-mills-6a4a121b0/" class="button"
+                        target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:dominicvolante@gmail.com" class="button" target="_blank">Email</a></li>
+            </ul>
+          </div>
+
+          <!---  Email Form --->
+
+          <div>
+            <form action="process-form.js" method="POST">
+              <label for="user-name">Your Name</label>
+              <input type="text" name="name" id="name" placeholder="Name" autofocus="on" required>
+
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="Subject">
+
+              <label for="form-message">Your message:</label>
+              <textarea id="form-message" name="message" required placeholder="Body"></textarea>
+
+              <button type="submit" name="submit">Submit</button>
+            </form>
+          </div>
+            <!--- Footer --->
+
+        
     </main>
-    <hr class="wrapper">
-    <article class="wrapper">
-<!-- About Me Section --> 
-
-      <h3>About Dominic</h3>
-      <p>I've always had a passion for people, and helping those in need. I've spent the past seven years working as a Police Officer in upstate New York, and during that time I worked hard to affect change in my community and learned a ton of useful skills. While I was able to help many people and enjoyed community policing, I wasn’t able to incite as much change as I wanted to.</p>
-      <p>After being inspired by amazing engineers such as Iddris Sandu, I realized a potential to reach further by learning software engineering. I developed an interest in coding at the age of 13 after I built my first computer and programmed a few HTML-based games. I've always maintained a strong interest in science and technology. My main interests are in general AI, robotics software, and space studies, and I regularly scan articles to keep up with the ever advancing tech world.</p>
-      <p> I am now a student at <a href="https://www.thinkful.com/" target="_blank">Thinkful</a> and I plan to implement the skills I've learned as a Police Officer into the tech world. I have a passion for helping people in any way that I can, and I hope to be able create software that can do just that.</p>
-      <p>If you're looking for a software engineer who is excited to take on a challenge, please feel free to reach out. I’m actively looking for new opportunities and I look forward to working with experienced engineers.</p> 
-    </article>
-    <hr class="wrapper">
-<!-- Contact Information --> 
-
-    <div id="contact"  class="wrapper">
-      <h3>Contact Me</h3>
-<!-- list of contact methods --> 
-
-      <ul>
-        <li><a href="https://github.com/DominicVolante" class="button" target="_blank">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/dominic-mills-6a4a121b0/" class="button" target="_blank">LinkedIn</a></li>
-        <li><a href="mailto:dominicvolante@gmail.com" class="button" target="_blank">Email</a></li>
-      </ul>
-<!-- Footer --> 
-
-    </div>
     <footer>
-      @DominicVolante
+        @DominicVolante
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
