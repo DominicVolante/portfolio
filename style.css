@@ -56,7 +56,9 @@ header nav ul li {
 
 /* ----- Main ----- */
 h3 {
-  text-align: center;
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  color: #736f72;
 }
 .tech {
   margin: 5px auto;
@@ -120,6 +122,10 @@ ul {
   flex-direction: row;
 }
 
+.sect h4 {
+  font-size: x-large;
+}
+
 .project {
   max-width: 300px;
   margin: 5px auto;
@@ -132,25 +138,22 @@ ul {
   margin: 0 auto;
 }
 /* ------ Form ------ */
-.center {
-  margin: 50px auto;
-}
+
 form {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
-  border: 1px solid #494949;
   border-radius: 0.3em;
   padding: 5px;
+  margin-top: 50px;
 }
 
 form label {
-  margin-bottom: 5px;
-  text-align: center;
+  margin: 10px 0 5px 30px;
 }
 
 form input {
   margin-bottom: 10px;
+  max-width: 300px;
 }
 
 form input[type="text"] {
@@ -161,7 +164,8 @@ form input[type="text"] {
 
 form textarea {
   height: 5rem;
-  max-width: 25rem;
+  width: 80%;
+  min-width: 280px;
   margin-bottom: 15px;
   border: 2px solid black;
   border-radius: 4px;
