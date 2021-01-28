@@ -19,7 +19,7 @@ a {
 
 /* ----- header format ----- */
 header {
-  color: #e0e1dd;
+  color: white;
   background-color: #736f72;
   display: flex;
   flex-flow: column;
@@ -121,9 +121,8 @@ ul {
 
 .project {
   max-width: 300px;
-  margin: 2px auto;
-  padding: 5px;
-  text-align: center;
+  margin: 5px auto;
+  padding: 20px;
 }
 .thumbnail {
   width: 200px;
@@ -213,8 +212,5 @@ form button:hover {
   }
   .projects {
     display: flex;
-  }
-  .left {
-    border-left: 1px solid black;
   }
 }
