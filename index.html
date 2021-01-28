@@ -42,9 +42,18 @@
         <article>
           <div class="group">
             <p>I have practice with these technologies:</p>
-            <p>Front-End:</p>
             <div class="tech">
-              <div class="tech-card">
+              <img
+                class="thumbnail"
+                src="./images/front-end-icons.png"
+                alt="Front End Skills"
+              />
+              <img
+                class="thumbnail"
+                src="./images/back-end-icons.png"
+                alt="Back End Skills"
+              />
+              <!-- <div class="tech-card">
                 <p>Front-End:</p>
                 <ol>
                   <li>JavaScript ES6</li>
@@ -73,7 +82,7 @@
                   <li>Data Structures & Algorithms</li>
                   <li>Heroku</li>
                 </ol>
-              </div>
+              </div> -->
             </div>
           </div>
         </article>
@@ -122,40 +131,65 @@
       <hr class="wrapper" />
 
       <!---  Projects Section --->
-      <article id="projects" class="sect">
+      <article class="sect">
         <h3>Projects</h3>
-        <ul>
-          <li class="project">
+        <ul class="projects">
+          <li class="project" id="1">
             <img class="thumbnail" src="./images/tuckImg.png" alt="Tuck" />
-            <h4>
+            <h3>
               <a href="https://tuckit.vercel.app" target="_blank">Tuck </a>
-            </h4>
+            </h3>
+            <p>
+              Tuck is a symptom tracking web app for people to take note and
+              keep track of symptoms they're experiencing. I built Tuck to help
+              me keep track of symptoms that my dog was having to help me
+              diagnose his issue with his vet. The app was built to be simple
+              and quick to use so that symptoms could be tracked easily when
+              they happened. Tuck is built using React with Hooks, and Node.js
+              with router.
+            </p>
           </li>
 
-          <li class="project">
+          <li class="project left">
             <img
               class="thumbnail"
               src="./images/carisListImg.png"
               alt="Cari's List"
             />
-            <h4>
+            <h3>
               <a href="https://caris-list.vercel.app" target="_blank"
                 >Cari's List
               </a>
-            </h4>
+            </h3>
+            <p>
+              Cari's List is a collection of eco-friendly products. Every
+              product has been meticulously researched so that users don't have
+              to do the research on their own. Every product page has a tab with
+              a short, consice product description, and a tab on how to properly
+              dispose of the product and its packaging. I built Cari's List to
+              practice building a full stack application from ground zero using
+              React and Node.js with PostgreSQL.
+            </p>
           </li>
 
-          <li class="project">
+          <li class="project left">
             <img
               class="thumbnail"
               src="./images/spacedRepImg.png"
               alt="Spaced Repetition"
             />
-            <h4>
+            <h3>
               <a href="https://patwa.vercel.app/register" target="_blank"
                 >Patwa Spaced Repetition
               </a>
-            </h4>
+            </h3>
+            <p>
+              The Patwa app is a demo application on how to use the spaced
+              repetition technique to help study a language, in this case,
+              Patwa. I built this app to practice using the linked list
+              datastructure on the back-end with Node.js, and traverse through
+              it with algorithms on the front-end with React.
+            </p>
           </li>
         </ul>
       </article>
