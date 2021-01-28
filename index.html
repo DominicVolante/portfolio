@@ -34,48 +34,58 @@
       <div class="imageWrapper">
         <img class="imgClass" src="profile-photo.jpg" alt="Dominic Volante" />
       </div>
-      <div class="group">
+      <div class="group sect">
         <h2>Welcome!</h2>
         <p>I'm a Software Engineer living in New Paltz, NY.</p>
-      </div>
-      <!--- Ordered List of code languages --->
-      <article>
-        <div class="group">
-          <p>I have practice with these technologies:</p>
-          <p>Front-End:</p>
-          <ol>
-            <li>JavaScript ES6</li>
-            <li>HTML5/CSS3</li>
-            <li>React</li>
-            <li>jQuery</li>
-          </ol>
-          <p>Back-End:</p>
-          <ol>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-            <li>TDD with Mocha/Chai</li>
-            <li>Authentication</li>
-          </ol>
-          <p>Dev Skills</p>
-          <ol>
-            <li>Git/GitHub</li>
-            <li>Chrome Dev Tools</li>
-            <li>NPM</li>
-            <li>Data Structures & Algorithms</li>
-            <li>Heroku</li>
-          </ol>
-        </div>
-      </article>
-      <p>
-        Explore my website and <a href="#contact">contact me</a> with any
-        questions!
-      </p>
 
+        <!--- Ordered List of code languages --->
+        <article>
+          <div class="group">
+            <p>I have practice with these technologies:</p>
+            <p>Front-End:</p>
+            <div class="tech">
+              <div class="tech-card">
+                <p>Front-End:</p>
+                <ol>
+                  <li>JavaScript ES6</li>
+                  <li>React</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>jQuery</li>
+                </ol>
+              </div>
+              <div class="tech-card">
+                <p>Back-End:</p>
+                <ol>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>PostgreSQL</li>
+                  <li>TDD with Mocha/Chai</li>
+                  <li>Authentication</li>
+                </ol>
+              </div>
+              <div class="tech-card">
+                <p>Dev Skills:</p>
+                <ol>
+                  <li>Git/GitHub</li>
+                  <li>Chrome Dev Tools</li>
+                  <li>NPM</li>
+                  <li>Data Structures & Algorithms</li>
+                  <li>Heroku</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+        <p>
+          Explore my projects and <a href="#contact">contact me</a> with any
+          questions!
+        </p>
+      </div>
       <hr class="wrapper" />
 
       <!--- About Me Section --->
-      <article id="about" class="wrapper">
+      <article id="about" class="wrapper sect">
         <h3>About Dominic</h3>
         <p>
           I've always had a passion for people, and helping those in need. I've
@@ -112,13 +122,42 @@
       <hr class="wrapper" />
 
       <!---  Projects Section --->
-      <article id="projects">
+      <article id="projects" class="sect">
         <h3>Projects</h3>
-        <h4>Personality Quiz</h4>
-        <p>
-          Here's a quiz I'm building using JavaScript, HTML, and CSS. This quiz
-          will be built during my time at Thinkful as an assignment.
-        </p>
+        <ul>
+          <li class="project">
+            <img class="thumbnail" src="./images/tuckImg.png" alt="Tuck" />
+            <h4>
+              <a href="https://tuckit.vercel.app" target="_blank">Tuck </a>
+            </h4>
+          </li>
+
+          <li class="project">
+            <img
+              class="thumbnail"
+              src="./images/carisListImg.png"
+              alt="Cari's List"
+            />
+            <h4>
+              <a href="https://caris-list.vercel.app" target="_blank"
+                >Cari's List
+              </a>
+            </h4>
+          </li>
+
+          <li class="project">
+            <img
+              class="thumbnail"
+              src="./images/spacedRepImg.png"
+              alt="Spaced Repetition"
+            />
+            <h4>
+              <a href="https://patwa.vercel.app/register" target="_blank"
+                >Patwa Spaced Repetition
+              </a>
+            </h4>
+          </li>
+        </ul>
       </article>
 
       <hr class="wrapper" />
@@ -135,24 +174,27 @@
               href="https://github.com/DominicVolante"
               class="button"
               target="_blank"
-              >Github</a
             >
+              Github
+            </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/dominic-mills-6a4a121b0/"
               class="button"
               target="_blank"
-              >LinkedIn</a
             >
+              LinkedIn
+            </a>
           </li>
           <li>
             <a
               href="mailto:dominicvolante@gmail.com"
               class="button"
               target="_blank"
-              >Email</a
             >
+              Email
+            </a>
           </li>
         </ul>
       </div>
@@ -160,14 +202,13 @@
       <!---  Email Form --->
 
       <div>
-        <form action="process-form.js" method="POST">
+        <form action="process-form.js" method="POST" class="center">
           <label for="user-name">Your Name</label>
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Name"
-            autofocus="on"
             required
           />
 
@@ -184,7 +225,7 @@
             id="form-message"
             name="message"
             required
-            placeholder="Body"
+            placeholder="Please include your Email"
           ></textarea>
 
           <button type="submit" name="submit">Submit</button>
