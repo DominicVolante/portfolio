@@ -106,11 +106,11 @@ ul {
   list-style: none;
   justify-content: center;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center;
 }
 #contact ul li {
-  margin: 0 25px;
+  margin: 10px 25px;
 }
 .sect {
   padding: 10px;
@@ -165,7 +165,7 @@ form input[type="text"] {
 form textarea {
   height: 5rem;
   width: 80%;
-  min-width: 280px;
+  min-width: 250px;
   margin-bottom: 15px;
   border: 2px solid black;
   border-radius: 4px;
@@ -190,8 +190,8 @@ form button:hover {
 
 .button {
   color: #ffffff;
-  border: 1px #9a8f97 solid;
-  background-color: #9a8f97;
+  border: 1px #736f72 solid;
+  background-color: #736f72;
   padding: 5px 15px;
   border-radius: 0.3em;
 }
